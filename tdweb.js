@@ -1684,6 +1684,7 @@ function localstorage_postMessage(channelState, messageJson) {
         uuid: channelState.uuid
       };
       var value = JSON.stringify(writeObj);
+      console.log(key, value);
       localStorage.setItem(key, value);
       /**
        * StorageEvent does not fire the 'storage' event
